@@ -2,26 +2,17 @@ import Link from 'next/link'
 import Image from "next/image";
 import Template from './templates/template';
 
-export default function Company() {
+export default function Flow() {
     return (
-        <Template isBlueBack={true}>
-            <div className="flex flex-row items-center">
-                <div className="flex flex-col items-center justify-center">
-                    <Image src="/yamo_logo.png" alt="Yamo ロゴ" width={200} height={100} />
-                    <p className="text-center">
-                        ってどんな会社？
-                    </p>
-                </div>
-                <div className="flex flex-col justify-center items-start gap-10">
-                    <p className="text-left">
-                        お客様がつくりたい映像を制作するために 最適なチーム作りから考える会社です。
-                    </p>
-                    <p className="text-left">
-                        今まで映像制作に携わってきた経験を踏まえ、 コストを抑えながら、機 動力を持って、 どのようなメンバーで映像を制作することが 最高の結果を導くことができるのか。
-                    </p>
-                    <p className="text-left">
-                        今まで映像制作に携わってきた経験を踏まえ、 コストを抑えながら、機 動力を持って、 どのようなメンバーで映像を制作することが 最高の結果を導くことができるのか。
-                    </p>
+        <Template>
+            <div className="flex flex-col items-center">
+                <h2>制作フロー</h2>
+                <div className="flex flex-row justify-center space-x-8 mt-6">
+                    {['メール', '発注', '制作', '納品'].map((text, index) => (
+                        <div key={index} className="flex items-center justify-center w-24 h-24 rounded-full bg-white text-blue-600 font-bold text-lg border-2 border-blue-600">
+                            {text}
+                        </div>
+                    ))}
                 </div>
             </div>
         </Template>
