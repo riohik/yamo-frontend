@@ -5,7 +5,7 @@ import Template from './templates/template';
 export default function Company() {
     return (
         <Template isBlueBack={true}>
-            <div className="flex flex-row items-center">
+            <div className="flex flex-row items-center text-white">
                 <div className="flex flex-col items-center justify-center">
                     <Image src="/yamo_logo.png" alt="Yamo ロゴ" width={200} height={100} />
                     <p className="text-center">
