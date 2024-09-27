@@ -13,16 +13,20 @@ export type Video = {
         height: number;
     };
     priority: number;
-    url: string;
+    url?: string;
 };
 export const apiClient = createClient({
     serviceDomain: process.env.NEXT_PUBLIC_MICROCMS_DOMAIN || "",
     apiKey: process.env.NEXT_PUBLIC_MICROCMS_API_KEY || "",
 });
 
-export const getVideos = async () => {
+export const getVideos = async (offset = 0,limit = 12) => {
     const videos = await apiClient.getList<any>({
-    endpoint: "videos"
+        endpoint: "videos",
+        queries: {
+            offset,
+            limit,
+        },
     });
     return videos;
 }

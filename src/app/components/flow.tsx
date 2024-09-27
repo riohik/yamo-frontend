@@ -11,7 +11,7 @@ export default function Flow() {
                 <Header2>制作フロー</Header2>
                 <div className="flex flex-row justify-between mt-6 gap-5">
                     {['メールで発注', '速攻見積もり', '企画演出\n撮影', '納品その後改訂作業まで'].map((text, index) => (
-                        <div key={index} className="flex items-center justify-center w-32 h-32 rounded-full font-bold text-lg border-2 border-[#0e1e4c] md:w-60 md:h-60">
+                        <div key={index} className="flex items-center justify-center w-28 h-28 rounded-full font-bold text-lg border-2 border-[#0e1e4c] md:w-60 md:h-60">
                             {text}
                         </div>
                     ))}
