@@ -15,13 +15,23 @@ export default function Works() {
         };
         fetchVideos();
     }, []);
+
+    const handleVideoClick = () => {
+        const password = prompt('パスワードを入力してください');
+        if (password === process.env.NEXT_PUBLIC_VIDEO_PASS) {
+            window.location.href = `/video`;
+        } else {
+            alert('パスワードが間違っています。');
+        }
+    };
+
     return (
         <Template>
             <div className="flex flex-col items-center">
                 <h2>映像制作実績</h2>
-                <div className="grid grid-cols-1 gap-4">
+                <ul className="grid grid-cols-1 gap-4">
                     {videos.map((video, index) => (
-                        <div key={index} className="h-[200px]">
+                        <li key={index} className="h-[100px]" onClick={() => handleVideoClick()}>
                             <Image
                                 src={video.thumbnail.url}
                                 alt={video.title}
@@ -29,8 +39,11 @@ export default function Works() {
                                 height={200}
                                 objectFit="cover"
                             />
-                        </div>
+                        </li>
                     ))}
+                </ul>
+                <div className="text-center">
+                    <p>TV-CM、Web-CM、ブランドムービー、VP、ドラマ、SNS 用動画など映像ジャンルを問わず、<br/>今までの映像制作のノウハウを活かすことでご依頼案件に適したチームを組み上げ、映像の制作を行います。<br/>また、企画、演出、撮影、編集 どのポジションからもご相談いただけます。</p>
                 </div>
             </div>
         </Template>

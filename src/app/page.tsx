@@ -9,7 +9,7 @@ import Contact from "./components/contact";
 export default function Home() {
   console.log(process.env.NEXT_PUBLIC_MICROCMS_API_KEY);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-white gap-[40px] p-[40px]">
+    <main className="font-body flex min-h-screen flex-col items-center justify-between bg-white gap-[40px] p-[40px]">
       <Top />
       <About />
       <Company />

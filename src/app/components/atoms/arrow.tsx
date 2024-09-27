@@ -18,7 +18,7 @@ const Arrow: React.FC<ArrowProps> = ({ text, direction = 'right', className = ''
 
     return (
         <div className={`flex items-center ${className} relative`}>
-            <div className="flex items-center justify-center bg-blue-primary-500 text-white px-4 py-2">
+            <div className="flex items-center justify-center text-white px-4 py-2">
                 <span className="mr-2">{text}</span>
                 <span className="font-bold">{getArrowSymbol()}</span>
             </div>

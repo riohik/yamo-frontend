@@ -4,9 +4,10 @@ type Props = {
     children: React.ReactNode;
 };
 
-const Arrow: React.FC<Props> = ({ children }) => {
+const Header2: React.FC<Props> = ({ children }) => {
 
     return (
-        <h2 className="text-2xl font-bold">{children}</h2>
+        <h2 className="text-5xl font-bold">{children}</h2>
     );
 };
+export default Header2;
