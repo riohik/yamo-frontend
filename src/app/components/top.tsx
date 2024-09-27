@@ -4,7 +4,7 @@ import Image from "next/image";
 import Template from './templates/template';
 
 export default function Top() {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth || 0);
+    const [windowWidth, setWindowWidth] = useState(0);
 
     useEffect(() => {
         if (typeof window !== 'undefined') {

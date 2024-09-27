@@ -4,7 +4,7 @@ import { YouTubeEmbed } from "@next/third-parties/google"
 import Template from './templates/template';
 
 export default function Flame() {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth, setWindowWidth] = useState(0);
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
