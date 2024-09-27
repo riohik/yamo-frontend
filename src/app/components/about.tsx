@@ -6,13 +6,13 @@ export default function About() {
     return (
         <Template>
             <div className="flex flex-row items-center">
-                <div className="flex flex-col items-center justify-center">
-                    <Image src="/yamo_logo.png" alt="Yamo ロゴ" width={200} height={100} />
+                <div className="flex flex-col items-center justify-center w-2/5">
+                    <Image src="/yamo_logo.png" alt="Yamo ロゴ" width={400} height={100} />
                     <p className="text-center">
                         ってどういう意味？
                     </p>
                 </div>
-                <div className="flex flex-col justify-center items-start gap-5">
+                <div className="flex flex-col justify-center items-start gap-5 w-3/5 pr-20">
                     <p className="text-left">
                         会社名の「やも」は、漢字で書くと「八面 / 八方」。 八方の方面、転じて、「あらゆる方向」と言う意味があります。
                     </p>

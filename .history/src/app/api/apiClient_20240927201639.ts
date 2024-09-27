@@ -1,4 +1,5 @@
 import { createClient } from 'microcms-js-sdk';
+declare module 'microcms-js-sdk';
 
 export type Video = {
     id: string;
@@ -13,20 +14,16 @@ export type Video = {
         height: number;
     };
     priority: number;
-    url?: string;
+    url: string;
 };
 export const apiClient = createClient({
     serviceDomain: process.env.NEXT_PUBLIC_MICROCMS_DOMAIN || "",
     apiKey: process.env.NEXT_PUBLIC_MICROCMS_API_KEY || "",
 });
 
-export const getVideos = async (offset = 0,limit = 12) => {
+export const getVideos = async () => {
     const videos = await apiClient.getList<any>({
-        endpoint: "videos",
-        queries: {
-            offset,
-            limit,
-        },
+    endpoint: "videos"
     });
     return videos;
 }

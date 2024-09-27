@@ -9,15 +9,15 @@ export default function Flow() {
         <Template>
             <div className="flex flex-col items-center">
                 <Header2>制作フロー</Header2>
-                <div className="flex flex-row justify-between mt-6 gap-5">
-                    {['メールで発注', '速攻見積もり', '企画演出\n撮影', '納品その後改訂作業まで'].map((text, index) => (
-                        <div key={index} className="flex items-center justify-center w-28 h-28 rounded-full font-bold text-lg border-2 border-[#0e1e4c] md:w-60 md:h-60">
+                <div className="flex flex-row justify-center space-x-8 mt-6">
+                    {['メール', '発注', '制作', '納品'].map((text, index) => (
+                        <div key={index} className="flex items-center justify-center w-24 h-24 rounded-full bg-white text-blue-600 font-bold text-lg border-2 border-blue-600">
                             {text}
                         </div>
                     ))}
                 </div>
                 <Arrow text='ノンストップでご納品まで'/>
-                <p className="text-5xl font-bold">ご予算 <span className="text-6xl">50</span>万円~<span className="text-6xl">1000</span>万円超え規模までご対応</p>
+                <p>ご予算 50万円~1000万円超え規模までご対応</p>
             </div>
         </Template>
     )
