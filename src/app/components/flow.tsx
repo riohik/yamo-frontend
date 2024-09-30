@@ -7,7 +7,7 @@ import Arrow from './atoms/arrow';
 export default function Flow() {
     return (
         <Template>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col gap-4 items-center">
                 <Header2>制作フロー</Header2>
                 <div className="flex flex-row justify-between mt-6 gap-1 lg:gap-5">
                     {['メールで発注', '速攻見積もり', '企画演出\n撮影', '納品\nその後の改訂作業まで'].map((text, index) => (

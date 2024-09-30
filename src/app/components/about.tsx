@@ -5,7 +5,7 @@ import Template from './templates/template';
 export default function About() {
     return (
         <Template>
-            <div className="flex flex-row items-center gap-1">
+            <div className="flex flex-row items-center gap-2 p-1">
                 <div className="flex flex-col items-center justify-center w-2/5">
                     <Image src="/yamo_logo_blue.jpg" alt="Yamo ロゴ" width={400} height={100} />
                     <p className="text-center">

@@ -20,29 +20,28 @@ export default function Works() {
 
     return (
         <Template id='works'>
-            <div className="flex flex-col items-center justify-center gap-10">
+            <div className="flex flex-col items-center justify-center gap-3">
                 <Header2>映像制作実績</Header2>
                 <div className="flex flex-col items-center justify-center">
-                    <ul className="flex flex-wrap gap-4 justify-center w-4/5">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 justify-center w-full h-[300px] lg:h-full overflow-y-scroll">
                         {videos.map((video, index) => (
-                            <li key={index} className="justify-center text-center">
-                                <div className="h-[150px] w-[270px] overflow-hidden"> {/* 固定サイズで表示 */}
+                            <div key={index} className="text-center">
+                                <div className="relative w-full h-0 pb-[56.25%] overflow-hidden" > {/* 固定サイズで表示 */}
                                     <Image
                                         src={video.thumbnail.url}
                                         alt={video.title}
-                                        width={270}
-                                        height={150}
-                                        className="object-cover" // 画像を枠内でカバー
+                                        layout="fill"
+                                        objectFit="cover"// 画像を枠内でカバー
                                     />
                                 </div>
-                                <p className="text-center text-white bg-[#0e1e4c]">
+                                <p className="text-[10px] lg:text-lg text-center text-white bg-[#0e1e4c]">
                                     {video.title}
                                 </p>
-                            </li>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 </div>
-                <div className="text-center pb-7 md:text-1xl lg:text-2xl">
+                <div className="text-center pb-7 text-sm lg:text-xl">
                     <p>TV-CM、Web-CM、ブランドムービー、VP、ドラマ、SNS 用動画など映像ジャンルを問わず、<br/>今までの映像制作のノウハウを活かすことでご依頼案件に適したチームを組み上げ、映像の制作を行います。<br/>また、企画、演出、撮影、編集 どのポジションからもご相談いただけます。</p>
                 </div>
             </div>
