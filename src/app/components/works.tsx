@@ -18,15 +18,6 @@ export default function Works() {
         fetchVideos();
     }, []);
 
-    const handleVideoClick = () => {
-        const password = prompt('パスワードを入力してください');
-        if (password === process.env.NEXT_PUBLIC_VIDEO_PASS) {
-            window.location.href = `/video`;
-        } else {
-            alert('パスワードが間違っています。');
-        }
-    };
-
     return (
         <Template id='works'>
             <div className="flex flex-col items-center justify-center gap-10">
@@ -34,7 +25,7 @@ export default function Works() {
                 <div className="flex flex-col items-center justify-center">
                     <ul className="flex flex-wrap gap-4 justify-center w-4/5">
                         {videos.map((video, index) => (
-                            <li key={index} className="justify-center text-center" onClick={() => handleVideoClick()}>
+                            <li key={index} className="justify-center text-center">
                                 <div className="h-[150px] w-[270px] overflow-hidden"> {/* 固定サイズで表示 */}
                                     <Image
                                         src={video.thumbnail.url}
