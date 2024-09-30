@@ -28,7 +28,7 @@ export default function Works() {
     };
 
     return (
-        <Template>
+        <Template id='works'>
             <div className="flex flex-col items-center justify-center gap-10">
                 <Header2>映像制作実績</Header2>
                 <div className="flex flex-col items-center justify-center">

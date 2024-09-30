@@ -7,7 +7,7 @@ export default function About() {
         <Template>
             <div className="flex flex-row items-center">
                 <div className="flex flex-col items-center justify-center w-2/5">
-                    <Image src="/yamo_logo.png" alt="Yamo ロゴ" width={400} height={100} />
+                    <Image src="/yamo_logo_blue.jpg" alt="Yamo ロゴ" width={400} height={100} />
                     <p className="text-center">
                         ってどういう意味？
                     </p>
