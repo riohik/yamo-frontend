@@ -28,22 +28,23 @@ export default function Works() {
     };
 
     return (
-        <Template>
+        <Template id='works'>
             <div className="flex flex-col items-center justify-center gap-10">
                 <Header2>映像制作実績</Header2>
                 <div className="flex flex-col items-center justify-center">
                     <ul className="flex flex-wrap gap-4 justify-center w-4/5">
                         {videos.map((video, index) => (
                             <li key={index} className="justify-center text-center" onClick={() => handleVideoClick()}>
-                                <div className="h-90 overflow-hidden" >
+                                <div className="h-[150px] w-[270px] overflow-hidden"> {/* 固定サイズで表示 */}
                                     <Image
                                         src={video.thumbnail.url}
                                         alt={video.title}
                                         width={270}
                                         height={150}
+                                        className="object-cover" // 画像を枠内でカバー
                                     />
                                 </div>
-                                <p className="text-center">
+                                <p className="text-center text-white bg-[#0e1e4c]">
                                     {video.title}
                                 </p>
                             </li>

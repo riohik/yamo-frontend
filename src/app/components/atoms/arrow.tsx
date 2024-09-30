@@ -7,24 +7,13 @@ interface ArrowProps {
 }
 
 const Arrow: React.FC<ArrowProps> = ({ text, direction = 'right', className = '' }) => {
-    const getArrowSymbol = () => {
-        switch (direction) {
-            case 'left': return '←';
-            case 'up': return '↑';
-            case 'down': return '↓';
-            default: return '→';
-        }
-    };
 
     return (
-        <div className={`flex items-center ${className} relative`}>
-            <div className="flex items-center justify-center text-white px-4 py-2">
-                <span className="mr-2">{text}</span>
-                <span className="font-bold">{getArrowSymbol()}</span>
-            </div>
-            <div className="absolute right-[-10px] top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[10px] border-l-blue-primary-500"></div>
+        <div className="inline-flex items-center text-white px-6 py-2">
+          <span className="relative z-10 text-white bg-[#0e1e4c] text-center lg:w-[1000px] max-md:w-[440px]">{text}</span>
+          <div className="w-0 h-0 border-t-[25px] border-t-transparent border-b-[25px] border-b-transparent border-l-[24px] border-l-[#0e1e4c] relative -ml-2 z-0"></div>
         </div>
-    );
+      );
 };
 
 export default Arrow;
