@@ -4,7 +4,7 @@ import About from "@/app/components/about"
 import Company from "./components/company";
 import Flow from "./components/flow";
 import Works from "./components/works";
-import Contact from "./components/contact";
+import Pass from "./components/pass";
 import Profile from "./components/Profile";
 import HeaderNav from "./components/HeaderNav";
 
@@ -16,8 +16,9 @@ export default function Home() {
       <Top />
       <About />
       <Company />
-      <Flow />
       <Works />
+      <Pass />
+      <Flow />
       <Profile />
       {/* <Contact /> */}
     </main>
