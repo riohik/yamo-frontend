@@ -7,7 +7,7 @@ export default function Profile() {
         <Template id="company">
             <div className="flex flex-col items-center justify-center">
                 <Header2>会社情報</Header2>
-                <table className='w-full mt-4 lg:mt-10 border-separate border-spacing-0 border-0'>
+                <table className='w-full mt-2 lg:mt-10 border-separate border-spacing-0 border-0'>
                     <tbody>
                         <tr>
                             <th className="bg-[#0e1e4c] text-white border-2 border-white">会社名</th>
