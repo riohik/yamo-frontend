@@ -23,7 +23,7 @@ export default function Works() {
             <div className="flex flex-col items-center justify-center gap-3">
                 <Header2>映像制作実績</Header2>
                 <div className="flex flex-col items-center justify-center px-1">
-                    <div className="grid grid-cols-3 lg:grid-cols-4 gap-1 lg:gap-4 justify-center w-full h-[300px] lg:h-full overflow-y-scroll">
+                    <div className="grid grid-cols-3 lg:grid-cols-5 gap-1 lg:gap-4 justify-center w-full h-[300px] lg:h-full overflow-y-scroll">
                         {videos.map((video, index) => (
                             <div key={index} className="text-center">
                                 <div className="relative w-full h-0 pb-[56.25%] overflow-hidden" > {/* 固定サイズで表示 */}
