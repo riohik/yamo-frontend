@@ -20,7 +20,7 @@ export const apiClient = createClient({
     apiKey: process.env.NEXT_PUBLIC_MICROCMS_API_KEY || "",
 });
 
-export const getVideos = async (offset = 0,limit = 16) => {
+export const getVideos = async (offset = 0,limit = 15) => {
     const videos = await apiClient.getList<any>({
         endpoint: "videos",
         queries: {

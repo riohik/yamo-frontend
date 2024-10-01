@@ -7,7 +7,7 @@ export default function Company() {
         <Template isBlueBack={true}>
             <div className="flex flex-row items-center gap-2 p-1">
                 <div className="flex flex-col items-center justify-center w-2/5">
-                    <Image src="/yamo_logo_grey.png" alt="Yamo ロゴ" width={400} height={100} className="filter brightness-300" />
+                    <Image src="/yamo_logo_white.png" alt="Yamo ロゴ" width={400} height={100} className="filter brightness-300" />
                     <p className="text-center">
                         ってどんな会社？
                     </p>
