@@ -34,7 +34,7 @@ export default function Works() {
                                         objectFit="cover"// 画像を枠内でカバー
                                     />
                                 </div>
-                                <p className="flex justify-center items-center text-[6px] lg:text-base text-center text-white bg-[#0e1e4c] ">
+                                <p className="flex justify-center items-center text-[4px] lg:text-base text-center text-white bg-[#0e1e4c] ">
                                     {video.title}
                                 </p>
                             </div>
