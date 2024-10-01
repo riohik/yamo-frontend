@@ -22,8 +22,8 @@ export default function Works() {
         <Template id='works'>
             <div className="flex flex-col items-center justify-center gap-3">
                 <Header2>映像制作実績</Header2>
-                <div className="flex flex-col items-center justify-center">
-                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 justify-center w-full h-[300px] lg:h-full overflow-y-scroll">
+                <div className="flex flex-col items-center justify-center px-1">
+                    <div className="grid grid-cols-3 lg:grid-cols-4 gap-1 lg:gap-4 justify-center w-full h-[300px] lg:h-full overflow-y-scroll">
                         {videos.map((video, index) => (
                             <div key={index} className="text-center">
                                 <div className="relative w-full h-0 pb-[56.25%] overflow-hidden" > {/* 固定サイズで表示 */}
@@ -34,7 +34,7 @@ export default function Works() {
                                         objectFit="cover"// 画像を枠内でカバー
                                     />
                                 </div>
-                                <p className="text-[10px] lg:text-lg text-center text-white bg-[#0e1e4c]">
+                                <p className="flex justify-center items-center text-[6px] lg:text-base text-center text-white bg-[#0e1e4c] ">
                                     {video.title}
                                 </p>
                             </div>
