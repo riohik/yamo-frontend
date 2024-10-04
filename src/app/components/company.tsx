@@ -12,15 +12,15 @@ export default function Company() {
                         ってどんな会社？
                     </p>
                 </div>
-                <div className="flex flex-col justify-center items-start gap-10 w-3/5 lg:pr-20 text-sm lg:text-xl">
+                <div className="flex flex-col justify-center items-start gap-10 w-3/5 lg:pr-20 text-xs lg:text-xl">
                     <p className="text-left">
-                        お客様がつくりたい映像を制作するために 最適なチーム作りから考える会社です。
+                        お客様がつくりたい映像を制作するために<br className="block" />最適なチーム作りから考える会社です。
                     </p>
                     <p className="text-left">
-                        今まで映像制作に携わってきた経験を踏まえ、コストを抑えながら、機動力を持って、どのようなメンバーで映像を制作することが最高の結果を導くことができるのか。
+                        今まで映像制作に携わってきた経験を踏まえ、<br className="block" />コストを抑えながら、機動力を持って、<br className="block" />どのようなメンバーで映像を制作することが<br className="block" />最高の結果を導くことができるのか。
                     </p>
                     <p className="text-left">
-                    お客様のオーダーから、素早くチームをスタッフィングし、最高のチームワークで映像を制作します
+                        お客様のオーダーから、<br className="block" />素早くチームをスタッフィングし、<br className="block" />最高のチームワークで映像を制作します
                     </p>
                 </div>
             </div>
