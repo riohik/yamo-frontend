@@ -1,5 +1,3 @@
-import Link from 'next/link'
-import Image from "next/image";
 import Template from './templates/template';
 import Header2 from './atoms/header2';
 import Arrow from './atoms/arrow';
