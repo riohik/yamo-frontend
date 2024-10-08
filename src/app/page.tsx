@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Top from "@/app/components/top"
 import About from "@/app/components/about"
 import Company from "./components/company";
@@ -20,7 +19,6 @@ export default function Home() {
       <Pass />
       <Flow />
       <Profile />
-      {/* <Contact /> */}
     </main>
   );
 }

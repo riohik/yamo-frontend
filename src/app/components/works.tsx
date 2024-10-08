@@ -1,8 +1,7 @@
 "use client";
-import Link from 'next/link'
 import Image from "next/image";
 import Template from './templates/template';
-import { apiClient, getVideos, Video } from '../api/apiClient';
+import { getVideos, Video } from '../api/apiClient';
 import { useEffect, useState } from 'react';
 import Header2 from './atoms/header2';
 
@@ -21,7 +20,7 @@ export default function Works() {
     return (
         <Template id='works'>
             <div className="flex flex-col items-center justify-center gap-5 lg:gap-3">
-                <Header2 is2Xl={true} >映像 演出・制作 実績</Header2>
+                <Header2 is2Xl={true} >演出・制作実績</Header2>
                 <div className="flex flex-col items-center justify-center px-1">
                     <div className="grid grid-cols-3 lg:grid-cols-5 gap-1 lg:gap-4 justify-center w-full h-[300px] lg:h-full overflow-y-scroll">
                         {videos.map((video, index) => (

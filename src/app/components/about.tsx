@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Image from "next/image";
 import Template from './templates/template';
 
@@ -12,7 +11,7 @@ export default function About() {
                         ってどういう意味？
                     </p>
                 </div>
-                <div className="flex flex-col justify-center items-start gap-5 w-3/5 lg:pr-20 text-[10px] lg:text-xl">
+                <div className="flex flex-col justify-center items-start gap-5 w-3/5 lg:pr-20 text-[10px] lg:text-lg">
                     <p className="text-left">
                         会社名の「やも」は、漢字で書くと「八面 / 八方」。<br className="lg:block hidden" /> 八方の方面、<br className="lg:hidden block" />転じて、「あらゆる方向」と言う意味があります。
                     </p>

@@ -1,15 +1,21 @@
 "use client";
 import Image from "next/image";
 import Template from './templates/template';
-import Header2 from './atoms/header2';
-import Arrow from './atoms/arrow';
 import { Button } from '@/components/ui/button';
+import { useSetRecoilState } from 'recoil';
+import { authState } from '@/atoms/authState';
+import { useRouter } from 'next/navigation'
 
 export default function Pass() {
+    const setAuth = useSetRecoilState(authState);
+    const router = useRouter();
     const handleVideoClick = () => {
         const password = prompt('パスワードを入力してください');
         if (password === process.env.NEXT_PUBLIC_VIDEO_PASS) {
-            window.location.href = `/video`;
+            setAuth(true);
+            setTimeout(() => {
+                router.push('/video');
+            }, 0);
         } else {
             alert('パスワードが間違っています。');
         }
