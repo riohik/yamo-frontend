@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     title: "株式会社やも 映像制作会社 CM / ドラマ / WebCMなどオールジャンル対応。無料見積もり、ご相談可能。低予算でハイクオリティな映像制作を実現。",
     description: "test",
     locale: 'ja_JP',
-    images: [{ url: '/yamotop.png' }],
+    images: [{ url: 'https://yamo.tokyo/yamotop.png' }],
     siteName: "株式会社やも"
   },
   icons: {
-    icon: '/app/favicon.ico',
+    icon: 'https://yamo.tokyo/yamo_gold.png',
   },
 };
 
