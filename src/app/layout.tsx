@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: "株式会社やも",
   description: "株式会社やも 映像制作会社 CM / ドラマ / WebCMなどオールジャンル対応。無料見積もり、ご相談可能。低予算でハイクオリティな映像制作を実現。",
   openGraph: {
-    title: "株式会社やも 映像制作会社 CM / ドラマ / WebCMなどオールジャンル対応。無料見積もり、ご相談可能。低予算でハイクオリティな映像制作を実現。",
-    description: "test",
+    title: "株式会社やも",
+    description: "株式会社やも 映像制作会社 CM / ドラマ / WebCMなどオールジャンル対応。無料見積もり、ご相談可能。低予算でハイクオリティな映像制作を実現。",
     locale: 'ja_JP',
     images: [{ url: 'https://yamo.tokyo/yamotop.png' }],
     siteName: "株式会社やも"
