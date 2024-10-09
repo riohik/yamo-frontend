@@ -9,7 +9,6 @@ export default function Video() {
     const [auth] = useRecoilState(authState);
     const router = useRouter();
     useEffect(() => {
-        console.log(auth);
         if(auth === false){
             router.push('/');
         }
