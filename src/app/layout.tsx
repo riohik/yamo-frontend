@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import RecoilProvider from './recoilProvider'
+import Head from 'next/head'
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,7 +16,10 @@ export const metadata: Metadata = {
     locale: 'ja_JP',
     images: [{ url: '/yamotop.png' }],
     siteName: "株式会社やも"
-  }
+  },
+  icons: {
+    icon: '/app/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -25,6 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      {/* <Head>
+        <link rel="icon" href="/yamo_gold.png"/>
+      </Head> */}
       <body className={inter.className}>
         <RecoilProvider>
           {children}
