@@ -16,7 +16,7 @@ export default function About() {
                         会社名の「やも」は、<br className="lg:hidden block" />漢字で書くと「八面 / 八方」。<br className="block" /> 八方の方面、転じて、<br className="lg:hidden block" />「あらゆる方向」<br className="lg:hidden block" />と言う意味があります。
                     </p>
                     <p className="text-left">
-                        あらゆる方々から常に<br className="lg:hidden block" />必要とされるような<br className="lg:hidden block" />存在であること、 <br className="block" />ご提案に対して、<br className="lg:hidden block" />多角的な視点で、<br className="lg:hidden block" />柔軟性をもって<br className="hidden lg:block" />映像を制作していくことを大切にしたいという<br className="block" />思いが込められています。
+                        あらゆる方々から常に<br className="lg:hidden block" />必要とされるような<br className="lg:hidden block" />存在であること、 <br className="block" />ご提案に対して、<br className="lg:hidden block" />多角的な視点で、<br className="lg:hidden block" />柔軟性をもって<br className="hidden lg:block" />映像を制作していく<br className="lg:hidden block" />ことを大切にしたいという<br className="block" />思いが込められています。
                     </p>
                     <p className="text-left">
                         また、<br className="lg:hidden block" />少し古い言葉になりますが、<br className="block" />和歌などの語尾に<br className="lg:hidden block" />「やも」と用いることで、<br className="block" />「仮説」や「詠嘆」の意味をもつことがあります。
