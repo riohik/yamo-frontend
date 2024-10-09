@@ -33,15 +33,15 @@ export default function Works() {
                                         objectFit="cover"// 画像を枠内でカバー
                                     />
                                 </div>
-                                <p className="flex justify-center items-center text-[4px] lg:text-base text-center text-white bg-[#0e1e4c] ">
+                                <p className="flex justify-center items-center text-[4px] lg:text-[10px] text-center text-white bg-[#0e1e4c] ">
                                     {video.title}
                                 </p>
                             </div>
                         ))}
                     </div>
                 </div>
-                <div className="text-center pb-7 text-sm lg:text-xl">
-                    <p>TV-CM、Web-CM、ブランドムービー、VP、ドラマ、SNS 用動画など映像ジャンルを問わず、<br/>今までの映像制作のノウハウを活かすことでご依頼案件に適したチームを組み上げ、映像の制作を行います。<br/>また、企画、演出、撮影、編集 どのポジションからもご相談いただけます。</p>
+                <div className="text-center pb-7 text-sm lg:text-lg">
+                    <p>TV-CM、Web-CM、ブランドムービー、VP、ドラマ、SNS 用動画など<br className="lg:hidden block" />映像ジャンルを問わず、<br/>今までの映像制作のノウハウを活かすことで<br className="lg:hidden block" />ご依頼案件に適したチームを組み上げ、<br className="lg:hidden block" />映像の制作を行います。<br/>また、企画、演出、撮影、編集 どのポジションからもご相談いただけます。</p>
                 </div>
             </div>
         </Template>
