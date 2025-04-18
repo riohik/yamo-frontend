@@ -23,7 +23,7 @@ export default function Profile() {
                         </tr>
                         <tr>
                             <th className="bg-[#0e1e4c] text-white border-2 border-white">代表取締役</th>
-                            <td className="bg-[#0e1e4c] text-white border-2 border-white">代表取締役 山下洋助</td>
+                            <td className="bg-[#0e1e4c] text-white border-2 border-white">山下洋助</td>
                         </tr>
                         <tr>
                             <th className="bg-[#0e1e4c] text-white border-2 border-white">資本金</th>
